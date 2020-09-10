@@ -3,6 +3,8 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <vector>  //  
+#include <sstream>  // for using the string stream
 
 
 int main(int argc, char* argv[]) {
@@ -15,10 +17,17 @@ int main(int argc, char* argv[]) {
   input_file.open(input_path);
 
   if (input_file.is_open()) {  // test read file
-    std::string line;
-    // how to divide the string
+    std::string line; 
     getline(input_file, line);
-    std::cout << line << std::endl;  // check
+    std::string temp;  //
+    std::stringstream ss(line);
+    std::vector<std::string> tokens;
+    
+    while (ss >> temp) {
+      tokens.push_back(temp);
+      std::cout << temp << std::endl;
+    }
+    std::cout << line << std::endl; 
   } else {  // If input file do not open print out error
     std::cerr << "입력 파일이 존재하지 않습니다.";
     return -1;
