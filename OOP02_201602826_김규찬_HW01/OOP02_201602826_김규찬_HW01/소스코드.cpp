@@ -69,4 +69,5 @@ int main(int argc, char* argv[]) {
   }
   input_file.close();
   output_file.close();
+  std::cout << "변환에 성공하였습니다.";
 }
