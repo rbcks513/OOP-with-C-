@@ -1,0 +1,3 @@
+﻿  HW04.cpp
+C:\Users\rbcks\Desktop\OOP-with-Cpp\OOP02_201602826_HW04\OOP02_201602826_HW04\HW04.cpp(126): warning C4715: 'TreeUtil::IsFullBinaryTree': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  OOP02_201602826_HW04.vcxproj -> C:\Users\rbcks\Desktop\OOP-with-Cpp\OOP02_201602826_HW04\Debug\OOP02_201602826_HW04.exe
